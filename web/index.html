@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tracker Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Video Analysis Tool</h1>
+    <div class="container">
+        <div class="video-panel">
+            <h3>Tracked Video</h3>
+            <video id="video-player" controls>
+                <source src="final_video_for_web.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="timeline-panel">
+            <h3>Object Timelines</h3>
+            <canvas id="timeline-chart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
